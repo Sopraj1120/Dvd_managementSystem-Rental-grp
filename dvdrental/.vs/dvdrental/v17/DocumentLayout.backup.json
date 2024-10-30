@@ -1,0 +1,270 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\data base\\databaseinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\data base\\databaseinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\dtos\\responcedtos\\adminresponcedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\dtos\\responcedtos\\adminresponcedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\dtos\\requestdtos\\adminrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\dtos\\requestdtos\\adminrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\dtos\\admindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\dtos\\admindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\entity\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\entity\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\service\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\service\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\irepository\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\irepository\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\repository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\repository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\iservice\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\iservice\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\irepository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\irepository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|c:\\users\\manch\\desktop\\milestone2-group\\dvdrental\\dvdrental\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{302334DE-348F-47BD-94AC-E631147982D4}|dvdrental\\dvdrental.csproj|solutionrelative:dvdrental\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\DTOs\\RequestDtos\\AdminRequestDto.cs",
+              "RelativeDocumentMoniker": "dvdrental\\DTOs\\RequestDtos\\AdminRequestDto.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\DTOs\\RequestDtos\\AdminRequestDto.cs",
+              "RelativeToolTip": "dvdrental\\DTOs\\RequestDtos\\AdminRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:33:04.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminResponceDto.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\DTOs\\ResponceDtos\\AdminResponceDto.cs",
+              "RelativeDocumentMoniker": "dvdrental\\DTOs\\ResponceDtos\\AdminResponceDto.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\DTOs\\ResponceDtos\\AdminResponceDto.cs",
+              "RelativeToolTip": "dvdrental\\DTOs\\ResponceDtos\\AdminResponceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:33:10.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseInitial.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Data base\\DatabaseInitial.cs",
+              "RelativeDocumentMoniker": "dvdrental\\Data base\\DatabaseInitial.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Data base\\DatabaseInitial.cs",
+              "RelativeToolTip": "dvdrental\\Data base\\DatabaseInitial.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:33:37.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\appsettings.json",
+              "RelativeDocumentMoniker": "dvdrental\\appsettings.json",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\appsettings.json",
+              "RelativeToolTip": "dvdrental\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-20T15:55:24.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminDto.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\DTOs\\AdminDto.cs",
+              "RelativeDocumentMoniker": "dvdrental\\DTOs\\AdminDto.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\DTOs\\AdminDto.cs",
+              "RelativeToolTip": "dvdrental\\DTOs\\AdminDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:32:44.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Entity\\Admin.cs",
+              "RelativeDocumentMoniker": "dvdrental\\Entity\\Admin.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Entity\\Admin.cs",
+              "RelativeToolTip": "dvdrental\\Entity\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:32:29.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "dvdrental\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "dvdrental\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:49:14.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Service\\AdminService.cs",
+              "RelativeDocumentMoniker": "dvdrental\\Service\\AdminService.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Service\\AdminService.cs",
+              "RelativeToolTip": "dvdrental\\Service\\AdminService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:35:39.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\IRepository\\IAdminRepository.cs",
+              "RelativeDocumentMoniker": "dvdrental\\IRepository\\IAdminRepository.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\IRepository\\IAdminRepository.cs",
+              "RelativeToolTip": "dvdrental\\IRepository\\IAdminRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:34:23.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Repository\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "dvdrental\\Repository\\AdminRepository.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Repository\\AdminRepository.cs",
+              "RelativeToolTip": "dvdrental\\Repository\\AdminRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:35:04.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\IService\\IAdminService.cs",
+              "RelativeDocumentMoniker": "dvdrental\\IService\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\IService\\IAdminService.cs",
+              "RelativeToolTip": "dvdrental\\IService\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:49:05.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Repository\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "dvdrental\\Repository\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Repository\\CustomerRepository.cs",
+              "RelativeToolTip": "dvdrental\\Repository\\CustomerRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:58:32.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Service\\CustomerService.cs",
+              "RelativeDocumentMoniker": "dvdrental\\Service\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Service\\CustomerService.cs",
+              "RelativeToolTip": "dvdrental\\Service\\CustomerService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T16:17:04.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\IRepository\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "dvdrental\\IRepository\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\IRepository\\ICustomerRepository.cs",
+              "RelativeToolTip": "dvdrental\\IRepository\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T16:14:36.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "dvdrental\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\manch\\Desktop\\milestone2-group\\dvdrental\\dvdrental\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "dvdrental\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T16:31:28.683Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

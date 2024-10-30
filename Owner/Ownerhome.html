@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DVD Rental System - Owner Page</h1>
+    </header>
+
+    <section>
+        <h2>Shops</h2>
+        <button id="addShopBtn">Add New Shop</button>
+        <table id="shopsTable">
+            <thead>
+                <tr>
+                    <th>Shop ID</th>
+                    <th>Shop Name</th>
+                    <th>Shop Location</th>
+                    <th>Admin Name</th>
+                    <th>Contact No</th>
+                    <th>Email</th>
+                    <th>Total Customers</th>
+                    <th>Total Movies</th>
+                    <th>Active Rentals</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="shopsList">
+                <!-- Shops will be dynamically populated here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Modal for Adding New Shop -->
+    <div id="addShopModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Shop</h2>
+            <form id="addShopForm">
+                <label for="shopId">Shop ID:</label>
+                <input type="text" id="shopId" required><br>
+
+                <label for="shopName">Shop Name:</label>
+                <input type="text" id="shopName" required><br>
+
+                <label for="shopLocation">Shop Location:</label>
+                <input type="text" id="shopLocation" required><br>
+
+                <label for="adminName">Admin Name:</label>
+                <input type="text" id="adminName" required><br>
+
+                <label for="adminContact">Contact No:</label>
+                <input type="text" id="adminContact" required><br>
+
+                <label for="adminEmail">Email:</label>
+                <input type="email" id="adminEmail" required><br>
+
+                <button type="submit">Add Shop</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Example shop data
+        const shops = [
+            { id: 'shop1', name: 'Central Shop', location: 'Downtown', adminName: 'John Doe', contact: '123-456-7890', email: 'john.doe@example.com', customers: 150, movies: 100, rentals: 30 },
+            { id: 'shop2', name: 'Uptown Shop', location: 'Uptown', adminName: 'Jane Smith', contact: '987-654-3210', email: 'jane.smith@example.com', customers: 200, movies: 75, rentals: 20 }
+        ];
+
+        // Populate shop data into the table
+        const shopsList = document.getElementById('shopsList');
+        function populateShops() {
+            shopsList.innerHTML = ''; // Clear existing rows
+            shops.forEach(shop => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${shop.id}</td>
+                    <td>${shop.name}</td>
+                    <td>${shop.location}</td>
+                    <td>${shop.adminName}</td>
+                    <td>${shop.contact}</td>
+                    <td>${shop.email}</td>
+                    <td>${shop.customers}</td>
+                    <td>${shop.movies}</td>
+                    <td>${shop.rentals}</td>
+                    <td><a href="admin.html?shopId=${shop.id}">View</a></td>
+                `;
+                shopsList.appendChild(row);
+            });
+        }
+        populateShops();
+
+        // Modal functionality
+        const modal = document.getElementById('addShopModal');
+        const btn = document.getElementById('addShopBtn');
+        const span = document.getElementsByClassName('close')[0];
+        const form = document.getElementById('addShopForm');
+
+        btn.onclick = function() {
+            modal.style.display = 'block';
+        };
+
+        span.onclick = function() {
+            modal.style.display = 'none';
+        };
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+
+        form.onsubmit = function(event) {
+            event.preventDefault();
+            const newShop = {
+                id: document.getElementById('shopId').value,
+                name: document.getElementById('shopName').value,
+                location: document.getElementById('shopLocation').value,
+                adminName: document.getElementById('adminName').value,
+                contact: document.getElementById('adminContact').value,
+                email: document.getElementById('adminEmail').value,
+                customers: 0, // Default value
+                movies: 0, // Default value
+                rentals: 0 // Default value
+            };
+            shops.push(newShop);
+            populateShops();
+            modal.style.display = 'none';
+        };
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental History</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link rel="stylesheet" href="memberstyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="..\Sourse\logo 1.png" alt="Unicorn Entertainment Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="userhome.html">Home</a></li>
+                <li><a href="rental.html">My Rentals</a></li>
+                <li><a href="account.html">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Rental History</h1>
+        <table class="rental-history-table" id="rental-history">
+            <thead>
+                <tr>
+                    <th>Movie Image</th>
+                    <th>Movie Title</th>
+                    <th>Status</th>
+                    <th>Reason</th>
+                    <th>Rent Date</th>
+                    <th>Return Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rental history will be displayed here -->
+            </tbody>
+        </table>
+        <p id="no-records" class="no-records hidden">No rental history available.</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>About Us Contact Terms of Service Privacy Policy</p>
+            <div class="social-media">
+                <a href="#"><img src="..\Sourse\Facebook.png" alt="Facebook" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Instagram.png" alt="Instagram" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\LinkedIn.png" alt="LinkedIn" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Pinterest.png" alt="Pinterest" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Twitter.png" alt="Twitter" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\TwitterX.png" alt="TwitterX" class="Socialmedia"></a>
+            </div>
+            <div class="copywrite">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tableBody = document.querySelector('#rental-history tbody');
+            const noRecords = document.getElementById('no-records');
+
+            async function fetchRentalRequests() {
+                try {
+                    const response = await fetch('http://localhost:5299/api/RentalRequest');
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch rental requests');
+                    }
+                    return await response.json();
+                } catch (error) {
+                    console.error('Error fetching rental requests:', error);
+                    return [];
+                }
+            }
+
+            function formatDate(dateString) {
+                const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+                return new Date(dateString).toLocaleDateString(undefined, options);
+            }
+
+            function calculateReturnDate(rentDate) {
+                const rentDateObj = new Date(rentDate);
+                rentDateObj.setDate(rentDateObj.getDate() + 7); // Add 7 days for return date
+                return formatDate(rentDateObj.toISOString());
+            }
+
+            async function displayRentalHistory() {
+
+                const history = await fetchRentalRequests();
+
+                if (history.length > 0) {
+                    noRecords.classList.add('hidden');
+                    tableBody.innerHTML = '';
+
+
+                    history.forEach((record) => {
+
+                        const returnDate = record.status === 'Accepted' ? calculateReturnDate(record.rentDate) : 'N/A';
+                        const statusMessage = record.status === 'Accepted' ? 'Accepted - You should receive your DVDs within two days. Failure to do so will result in cancellation of your rent.' : record.status;
+                        let status = 'Pending'
+
+                        let reason = ' Your order is currently pending. We are processing it and will update you shortly.</br> Thank you for your patience!'
+                        if (record.status == 1) {
+                            status = 'Accepeted'
+                            reason = 'Thank you for your order! Your order has been successfully processed. </br> We will notify you once it ships'
+                        } else if (record.status == 4) {
+                            status = 'Rejected'
+                            reason = 'We’re sorry, but your order has been rejected because it was submitted after the cutoff time for same-day processing.</br> Please place your order again during our operating hours.'
+                        }else if (record.status==2) {
+                              status = 'Return'
+                            reason = 'Your Order is Return Successfully'
+                        }else if(record.status==3){
+                                status = 'Return'
+                            reason = 'Your Order is Finish'
+                        }
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td><img src="${record.movieImage}" alt="${record.movieTitle}"></td>
+                            <td>${record.movieTitle}</td>
+                            <td class="changeColor">${status}</td>
+                            <td class="ReasonColor"">${reason}</td>
+                            <td>${formatDate(record.rentDate)}</td>
+                            <td>${record.returnDate ? formatDate(record.returnDate) : 'N/A'}</td>
+                        `;
+                        tableBody.appendChild(row);
+                        let td = document.querySelector('.changeColor')
+                        let Rtd = document.querySelector('.ReasonColor')
+                        
+                        Rtd.className = "blue"
+                        td.className = "blue"
+                        if (record.status == 1) {
+                            td.className = "green"
+                            Rtd.className = "green"
+
+
+
+                        } else if (record.status == 4) {
+                            td.className = "red"
+                            Rtd.className = "red"
+
+
+                        }else if (record.status == 2) {
+                              td.className = ""
+                            Rtd.className = ""
+                        }
+
+                    });
+                } else {
+                    tableBody.innerHTML = '';
+                    noRecords.classList.remove('hidden');
+                }
+            }
+
+            displayRentalHistory();
+        });
+    </script>
+</body>
+
+</html>

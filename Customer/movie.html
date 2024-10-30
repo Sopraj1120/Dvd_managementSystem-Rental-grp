@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link rel="stylesheet" href="memberstyles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="..\Sourse\logo 1.png" alt="Unicorn Entertainment Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">SignIn/SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="movie-details">
+        <h1 id="movie-title"></h1>
+        <img id="movie-image" src="" alt="Movie Image">
+        <p id="movie-description"></p>
+        <p><strong>Category:</strong> <span id="movie-category"></span></p>
+        <p><strong>Number of Copies:</strong> <span id="movie-copies"></span></p>
+        <button id="rent-now-btn">Rent Now</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>About Us Contact Terms of Service Privacy Policy</p>
+            <div class="social-media">
+                <!-- Social Media Links -->
+            </div>
+            <div class="copywrite">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            // Get movieId from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const movieId = urlParams.get('movieId');
+
+            if (!movieId) {
+                alert('No movie selected');
+                return;
+            }
+
+            try {
+                // Fetch movie data
+                const movieResponse = await fetch(`http://localhost:3000/movies/${movieId}`);
+                if (!movieResponse.ok) {
+                    throw new Error('Failed to fetch movie data');
+                }
+                const movie = await movieResponse.json();
+
+                // Fetch category data
+                const categoryResponse = await fetch('http://localhost:3000/categories');
+                if (!categoryResponse.ok) {
+                    throw new Error('Failed to fetch category data');
+                }
+                const categories = await categoryResponse.json();
+
+                // Find the movie's category name
+                const category = categories.find(cat => cat.id == movie.categoryId);
+                const categoryName = category ? category.name : 'Unknown Category';
+
+                // Display the movie details in the HTML
+                document.getElementById('movie-title').textContent = movie.title;
+                document.getElementById('movie-image').src = movie.imageUrl;
+                document.getElementById('movie-image').alt = movie.title;
+                document.getElementById('movie-description').textContent = movie.description;
+                document.getElementById('movie-category').textContent = categoryName;
+                document.getElementById('movie-copies').textContent = movie.no_of_copies;
+
+                // Add Rent Now button functionality
+                document.getElementById('rent-now-btn').addEventListener('click', () => {
+                    rentMovie(movie);
+                });
+            } catch (error) {
+                console.error('Error fetching movie or category data:', error);
+                document.querySelector('.movie-details').innerHTML = '<p>Movie not found.</p>';
+            }
+        });
+
+        // Rent Movie function to handle rental process
+        function rentMovie(movie) {
+            const rentals = JSON.parse(localStorage.getItem('rentals')) || [];
+
+            rentals.push({
+                movieTitle: movie.title,
+                movieImage: movie.imageUrl,
+                status: 'Pending',
+                rentDate: new Date().toISOString(),
+                userId: 'currentUserId' // Replace this with the actual logged-in user's ID
+            });
+
+            localStorage.setItem('rentals', JSON.stringify(rentals));
+
+            // Redirect to the member login page or rental confirmation page
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
+

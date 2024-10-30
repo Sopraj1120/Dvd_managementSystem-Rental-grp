@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+<body>
+    <header>
+        <h1 id="shopTitle">Admin Page</h1>
+    </header>
+    <section>
+        <h2>Shop Overview</h2>
+        <p>Total Movies: <span id="totalMovies">0</span></p>
+        <p>Total Customers: <span id="totalCustomers">0</span></p>
+        <p>Active Rentals: <span id="activeRentals">0</span></p>
+    </section>
+    <section>
+        <h2>Manage Rentals</h2>
+        <p id="rentalDescription">Manage the rental activities, update records, and handle user requests.</p>
+    </section>
+    <footer>
+        <p id="footer">&copy; 2024 DVD Rental System</p>
+    </footer>
+
+    <script>
+        // Shop data
+        const shops = {
+            shop1: {
+                title: "Admin Page - Shop 1 (Downtown)",
+                totalMovies: 100,
+                totalCustomers: 150,
+                activeRentals: 30,
+                footer: "&copy; 2024 DVD Rental System - Shop 1",
+                description: "Manage the rental activities, update records, and handle user requests for the Downtown shop."
+            },
+            shop2: {
+                title: "Admin Page - Shop 2 (Uptown)",
+                totalMovies: 75,
+                totalCustomers: 200,
+                activeRentals: 20,
+                footer: "&copy; 2024 DVD Rental System - Shop 2",
+                description: "Manage the rental activities, update records, and handle user requests for the Uptown shop."
+            }
+        };
+
+        // Get shop ID from URL (e.g., ?shopId=shop1)
+        const params = new URLSearchParams(window.location.search);
+        const shopId = params.get('shopId');
+
+        // Select relevant DOM elements
+        const shopTitle = document.getElementById("shopTitle");
+        const totalMovies = document.getElementById("totalMovies");
+        const totalCustomers = document.getElementById("totalCustomers");
+        const activeRentals = document.getElementById("activeRentals");
+        const rentalDescription = document.getElementById("rentalDescription");
+        const footer = document.getElementById("footer");
+
+        // If shopId exists in the URL, load the data for that shop
+        if (shopId && shops[shopId]) {
+            const shopData = shops[shopId];
+            shopTitle.textContent = shopData.title;
+            totalMovies.textContent = shopData.totalMovies;
+            totalCustomers.textContent = shopData.totalCustomers;
+            activeRentals.textContent = shopData.activeRentals;
+            rentalDescription.textContent = shopData.description;
+            footer.innerHTML = shopData.footer;
+        } else {
+            // Default to a general admin page if no valid shopId is present
+            shopTitle.textContent = "Admin Page";
+            totalMovies.textContent = "0";
+            totalCustomers.textContent = "0";
+            activeRentals.textContent = "0";
+            rentalDescription.textContent = "Manage the rental activities, update records, and handle user requests.";
+            footer.innerHTML = "&copy; 2024 DVD Rental System";
+        }
+    </script>
+</body>
+</html>

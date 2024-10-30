@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies by Category</title>
+    <link rel="icon" href="../Sourse/logo 1.png" type="image/png">
+    <link rel="stylesheet" href="memberstyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Sourse/logo 1.png" alt="Unicorn Entertainment Logo">
+        </div>
+        <nav>
+            <div class="search-container">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12.5 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+                <input type="text" placeholder="Search the movie">
+            </div>
+            <ul>
+                <li><a href="userhome.html">Home</a></li>
+                <li><a href="rental.html">My Rentals</a></li>
+                <li><a href="account.html">My Account</a></li>
+            </ul>
+        </nav>
+        <div id="welcome-note"></div> <!-- Welcome note placeholder -->
+    </header>
+
+    <div class="content">
+        <h1>Browse Movies by Category</h1>
+        <div class="movie-category">
+            <label for="category-select">Select a Category:</label>
+            <select id="category-select">
+                <option>Select Category</option>
+            </select>
+        </div>
+
+        <div id="movies-list">
+            <!-- Movies for selected category -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>About Us Contact Terms of Service Privacy Policy</p>
+            <div class="social-media">
+                <a href="#"><img src="../Sourse/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../Sourse/Instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../Sourse/LinkedIn.png" alt="LinkedIn"></a>
+                <a href="#"><img src="../Sourse/Pinterest.png" alt="Pinterest"></a>
+                <a href="#"><img src="../Sourse/Twitter.png" alt="Twitter"></a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const moviesList = document.getElementById('movies-list');
+            const categorySelect = document.getElementById('category-select');
+            const searchInput = document.querySelector('.search-container input');
+            const welcomeNote = document.getElementById('welcome-note');
+
+            // Get logged-in user's ID from session storage
+            const loggedInUser = sessionStorage.getItem('loggedInUser');
+
+            // Check if a user is logged in
+            let userId = null;
+            let customerName = 'Guest'; // Default name
+
+            if (loggedInUser) {
+                const user = JSON.parse(loggedInUser);
+                userId = user.id;
+
+                // Fetch customer data from the endpoint
+                fetch('http://localhost:5299/api/Customer/GetAllCustomers')
+                    .then(response => response.json())
+                    .then(customers => {
+                        // Find the customer with the matching ID
+                        const customer = customers.find(c => c.id === userId);
+
+                        if (customer) {
+                            // Display the first name of the logged-in customer in the welcome note
+                            customerName = customer.firstName; // Save customer name
+                            welcomeNote.textContent = `Welcome, ${customerName}!`;
+                        } else {
+                            welcomeNote.textContent = 'Welcome, Guest!';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching customers:', error);
+                        welcomeNote.textContent = 'Welcome, Guest!';
+                    });
+            } else {
+                welcomeNote.textContent = 'Welcome, Guest!';
+            }
+
+            async function fetchCategories() {
+                try {
+                    const response = await fetch('http://localhost:5299/api/Category');
+                    return await response.json();
+                } catch (error) {
+                    console.error('Error fetching categories:', error);
+                    return [];
+                }
+            }
+
+            async function fetchMovies(categoryId) {
+                try {
+                    const response = await fetch(`http://localhost:5299/api/Movie/category/${categoryId}`);
+                    return await response.json();
+                } catch (error) {
+                    console.error('Error fetching movies:', error);
+                    return [];
+                }
+            }
+
+            async function initializeCategories() {
+                const categories = await fetchCategories();
+                categories.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category.id;
+                    option.textContent = category.name;
+                    categorySelect.appendChild(option);
+                });
+            }
+
+            async function displayCategoryMovies(categoryId, searchQuery = '') {
+                moviesList.innerHTML = '';
+                const categoryMovies = await fetchMovies(categoryId);
+                const filteredMovies = categoryMovies.filter(movie =>
+                    movie.title.toLowerCase().includes(searchQuery.toLowerCase())
+                );
+
+                if (filteredMovies.length > 0) {
+                    filteredMovies.forEach(movie => {
+                        const movieItem = document.createElement('div');
+                        movieItem.className = 'movie-item';
+                        movieItem.innerHTML = `
+                    <img src="${movie.image}" alt="${movie.title}">
+                    <div class="movie-details">
+                        <h3>${movie.title}</h3>
+                        <p>${movie.description}</p>
+                        <p><strong>Copies Available:</strong> ${movie.copies}</p>
+                        <button class="rent-btn" onclick="rentMovie('${movie.id}', '${movie.title}', '${movie.image}', '${movie.copies}', '${userId}', '${customerName}')">Rent Now</button>
+                    </div>
+                `;
+                        moviesList.appendChild(movieItem);
+                    });
+                } else {
+                    moviesList.innerHTML = '<p>No movies available for this category.</p>';
+                }
+            }
+
+            categorySelect.addEventListener('change', function () {
+                displayCategoryMovies(this.value, searchInput.value);
+            });
+
+            searchInput.addEventListener('input', function () {
+                displayCategoryMovies(categorySelect.value, this.value);
+            });
+
+            initializeCategories();
+
+            window.rentMovie = async function (movieId, movieTitle, movieImage, availableCopies, customerId, customerName) {
+                const rentalRequest = {
+                    movieId,
+                    movieTitle,
+                    movieImage,
+                    availableCopies,
+                    customerId,
+                    customerName,
+                    status: 0, // Rental status
+                    rentDate: new Date().toISOString(), // Current date in ISO format
+                    returnDate: 'null' // Will be set later when the movie is returned
+                };
+                console.log(rentalRequest)
+
+                let MovieDetails = []
+                try {
+                    fetch('http://localhost:5299/api/Movie')
+                        .then(d => d.json())
+                        .then(d => {
+                            MovieDetails.push(...d)
+                            let QuantValidate = MovieDetails.find(x => x.id == movieId)
+                            let CopFinal = availableCopies - 1
+
+                            let QObj = {
+                                title: QuantValidate.title,
+                                description: QuantValidate.description,
+                                copies: CopFinal,
+                                categoryId: QuantValidate.categoryId,
+                                categoryName: QuantValidate.categoryName,
+                                image: QuantValidate.image
+                            }
+                            console.log(QObj)
+                            console.log('QObj')
+                            fetch(`http://localhost:5299/api/Movie?id=${QuantValidate.id}`, {
+                                method: 'PUT',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify(QObj),
+                            });
+                        })
+
+                    const response = await fetch('http://localhost:5299/api/RentalRequest', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(rentalRequest),
+                    });
+
+                    if (response.ok) {
+                        alert(`Your request to rent "${movieTitle}" has been submitted.`);
+                        setInterval(() => {
+                            window.location.reload()
+                        }, 800);
+                    } else {
+                        alert('Failed to submit rental request.');
+                    }
+                } catch (error) {
+                    console.error('Error renting movie:', error);
+                    alert('An error occurred while renting the movie.');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

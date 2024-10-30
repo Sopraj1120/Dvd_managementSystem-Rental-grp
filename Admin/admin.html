@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="..\Sourse\logo 1.png" alt="Unicorn Entertainment Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="User.html">Users</a></li>
+                    <li><a href="notification.html">Notifications</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="report.html">Reports</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="dashboard">
+            <h1>Dashboard</h1>
+            <table>
+                <tr>
+                    <th>Total Movies by Title</th>
+                    <th>Total Users</th>
+                    <th>Active Rentals</th>
+                </tr>
+                <tr>
+                    <td id="total-movies">0</td>
+                    <td id="total-users">0</td>
+                    <td id="active-rentals">0</td>
+                </tr>
+            </table>
+            <div id="movies-by-title"></div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>About Us Contact Terms of Service Privacy Policy</p>
+                <div class="social-media">
+                    <a href="#"><img src="..\Sourse\Facebook.png" alt="Facebook" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Instagram.png" alt="Instagram" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\LinkedIn.png" alt="LinkedIn" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Pinterest.png" alt="Pinterest" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Twitter.png" alt="Twitter" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\TwitterX.png" alt="TwitterX" class="Socialmedia"></a>
+                </div>
+                <div class="copywrite">
+                    &copy; 2024 Unicorn Entertainment
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const moviesUrl = 'http://localhost:3000/movies';
+    const userurl = 'http://localhost:5299/api/Customer/GetAllCustomers';
+    const activerentalurl = 'http://localhost:3000/rentalRequests';
+
+    // Function to fetch movies and count the total
+    function countTotalMovies() {
+        fetch(moviesUrl)
+            .then(response => response.json())
+            .then(movies => {
+                const totalMovies = movies.length;
+                document.getElementById('total-movies').textContent = `${totalMovies}`;
+            })
+            .catch(error => console.error('Error fetching movies:', error));
+    }
+
+    // Function to fetch users and count the total
+    function countTotalCustomer() {
+        fetch(userurl)
+            .then(response => response.json())
+            .then(customers => {
+                const totalCustomers = customers.length;
+                document.getElementById('total-users').textContent = `${totalCustomers}`;
+            })
+            .catch(error => console.error('Error fetching customers:', error));
+    }
+
+    // Function to fetch active rentals and count those with status 'accept'
+    function countTotalActive() {
+        fetch(activerentalurl)
+            .then(res => res.json())
+            .then(rentals => {
+                // Filter rentals where status is 'accept'
+                const acceptedRentals = rentals.filter(rental => rental.status === 'Approved');
+                const totalActiveRental = acceptedRentals.length;
+                document.getElementById('active-rentals').textContent = `${totalActiveRental}`;
+            })
+            .catch(error => console.error('Error fetching ActiveRentals:', error));
+    }
+
+    // Call the functions to count total movies, customers, and active rentals
+    countTotalMovies();
+    countTotalCustomer();
+    countTotalActive();
+});
+
+    </script>
+</body>
+
+</html>

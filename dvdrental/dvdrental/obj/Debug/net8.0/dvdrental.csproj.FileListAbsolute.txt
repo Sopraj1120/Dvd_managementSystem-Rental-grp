@@ -1,0 +1,483 @@
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.AssemblyReference.cache
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.GeneratedMSBuildEditorConfig.editorconfig
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfoInputs.cache
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfo.cs
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.CoreCompileInputs.cache
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cs
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cache
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.sourcelink.json
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.Development.json
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.json
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.exe
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.deps.json
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.runtimeconfig.json
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.pdb
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Core.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Identity.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.OpenApi.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.ClientModel.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Memory.Data.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Runtime.Caching.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.build.json
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.development.json
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.dvdrental.Microsoft.AspNetCore.StaticWebAssets.props
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.build.dvdrental.props
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.dvdrental.props
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.dvdrental.props
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.pack.json
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\scopedcss\bundle\dvdrental.styles.css
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.Up2Date
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\refint\dvdrental.dll
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.pdb
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.genruntimeconfig.cache
+X:\GROUP_PROJECT_DVD_M2\17-10-2024(G-P_M2)\backend\dvdrental\dvdrental\obj\Debug\net8.0\ref\dvdrental.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.Development.json
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.json
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.exe
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.deps.json
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.runtimeconfig.json
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.pdb
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Core.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Identity.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.OpenApi.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.ClientModel.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Memory.Data.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Runtime.Caching.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+X:\111111111111\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.AssemblyReference.cache
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.GeneratedMSBuildEditorConfig.editorconfig
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfoInputs.cache
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfo.cs
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.CoreCompileInputs.cache
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cs
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cache
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.sourcelink.json
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.build.json
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.development.json
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.dvdrental.Microsoft.AspNetCore.StaticWebAssets.props
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.build.dvdrental.props
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.dvdrental.props
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.dvdrental.props
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.pack.json
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\scopedcss\bundle\dvdrental.styles.css
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.Up2Date
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.dll
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\refint\dvdrental.dll
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.pdb
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.genruntimeconfig.cache
+X:\111111111111\backend\dvdrental\dvdrental\obj\Debug\net8.0\ref\dvdrental.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.Development.json
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.json
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.exe
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.deps.json
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.runtimeconfig.json
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.pdb
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Core.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Identity.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.ClientModel.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.AssemblyReference.cache
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfoInputs.cache
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfo.cs
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.CoreCompileInputs.cache
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.sourcelink.json
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.development.json
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.dvdrental.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.build.dvdrental.props
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.dvdrental.props
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.dvdrental.props
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\scopedcss\bundle\dvdrental.styles.css
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.Up2Date
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\refint\dvdrental.dll
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.pdb
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.genruntimeconfig.cache
+D:\Projects\17-10-2024(Bacend_Group)\backend\dvdrental\dvdrental\obj\Debug\net8.0\ref\dvdrental.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.AssemblyReference.cache
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfoInputs.cache
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfo.cs
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.CoreCompileInputs.cache
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.sourcelink.json
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\refint\dvdrental.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.pdb
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.json
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.exe
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.deps.json
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.runtimeconfig.json
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.pdb
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.dvdrental.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.build.dvdrental.props
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.dvdrental.props
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.dvdrental.props
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\scopedcss\bundle\dvdrental.styles.css
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.Up2Date
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.genruntimeconfig.cache
+C:\Users\manch\Desktop\New folder\backend\dvdrental\dvdrental\obj\Debug\net8.0\ref\dvdrental.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.json
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.exe
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.deps.json
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.runtimeconfig.json
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.pdb
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.AssemblyReference.cache
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfoInputs.cache
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfo.cs
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.CoreCompileInputs.cache
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.sourcelink.json
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.dvdrental.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.build.dvdrental.props
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.dvdrental.props
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.dvdrental.props
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\scopedcss\bundle\dvdrental.styles.css
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.Up2Date
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\refint\dvdrental.dll
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.pdb
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.genruntimeconfig.cache
+C:\Users\manch\Desktop\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\ref\dvdrental.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.json
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.exe
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.deps.json
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.runtimeconfig.json
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.pdb
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.AssemblyReference.cache
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfoInputs.cache
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfo.cs
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.sourcelink.json
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.dvdrental.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.build.dvdrental.props
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.dvdrental.props
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.dvdrental.props
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\scopedcss\bundle\dvdrental.styles.css
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.Up2Date
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\refint\dvdrental.dll
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.pdb
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.genruntimeconfig.cache
+C:\Users\hp\OneDrive\Desktop\TODAY\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\ref\dvdrental.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\appsettings.json
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.exe
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.deps.json
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.runtimeconfig.json
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\dvdrental.pdb
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.AssemblyReference.cache
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfoInputs.cache
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.AssemblyInfo.cs
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.CoreCompileInputs.cache
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.sourcelink.json
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.dvdrental.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.build.dvdrental.props
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.dvdrental.props
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.dvdrental.props
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\scopedcss\bundle\dvdrental.styles.css
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.csproj.Up2Date
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\refint\dvdrental.dll
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.pdb
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\dvdrental.genruntimeconfig.cache
+C:\Users\UT01286\Downloads\milestone2-group\milestone2-group\dvdrental\dvdrental\obj\Debug\net8.0\ref\dvdrental.dll

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals Page</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="..\Sourse\logo 1.png" alt="Unicorn Entertainment Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="User.html">Users</a></li>
+                <li><a href="notification.html">Notifications</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="report.html">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="rental-management">
+        <h1>Rental Management</h1>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="error-message" style="color: red;"></div>
+        <table id="rental-management-table">
+            <thead>
+                <tr>
+                    <th>Movie Image</th>
+                    <th>Movie Title</th>
+                    <th>User Name</th>
+                    <th>Rent Date</th>
+                    <th>Return Date</th>
+                    <th>Overdue Alert</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rental management content will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>About Us Contact Terms of Service Privacy Policy</p>
+            <div class="social-media">
+                <a href="#"><img src="..\Sourse\Facebook.png" alt="Facebook" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Instagram.png" alt="Instagram" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\LinkedIn.png" alt="LinkedIn" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Pinterest.png" alt="Pinterest" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Twitter.png" alt="Twitter" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\TwitterX.png" alt="TwitterX" class="Socialmedia"></a>
+            </div>
+            <div class="copywrite">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        async function fetchRentalData() {
+            document.getElementById('loading').style.display = 'block'; // Show loading indicator
+            try {
+
+                const response = await fetch('http://localhost:5299/api/RentalRequest');
+                if (response.ok) {
+                    const rentals = await response.json();
+                    populateTable(rentals);
+
+                } else {
+                    throw new Error('Error fetching rental data');
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                document.getElementById('error-message').textContent = 'Failed to load rental data. Please try again later.';
+            } finally {
+                document.getElementById('loading').style.display = 'none'; // Hide loading indicator
+            }
+        }
+
+        function populateTable(rentals) {
+
+            const tbody = document.querySelector('#rental-management-table tbody');
+            tbody.innerHTML = ''; // Clear previous content
+
+            rentals.forEach(rental => {
+                if (rental.status === 1) { // Assuming 'status' is the property that indicates acceptance
+                    const row = document.createElement('tr');
+
+                    // Create table cells for each property
+                    row.innerHTML = `
+                        <td><img src="${rental.movieImage}" alt="${rental.movieTitle}" style="width: 50px; height: auto;"></td>
+                        <td>${rental.movieTitle}</td>
+                        <td>${rental.customerId}</td>
+                        <td>${new Date(rental.rentDate).toLocaleDateString()}</td>
+                        <td>${new Date(rental.returnDate).toLocaleDateString()}</td>
+                        <td>${rental.isOverdue ? '<span style="color: red;">Overdue</span>' : 'On Time'}</td>
+                        <td><button onclick="returnRental('${rental.id}')">Return</button></td>
+                    `;
+
+                    tbody.appendChild(row);
+                }
+            });
+        }
+
+        // Call the fetch function when the page loads
+        window.onload = fetchRentalData;
+
+        function returnRental(RequestId) {
+            // Implement return rental logic here
+            try {
+                console.log(RequestId)
+                 fetch(`http://localhost:5299/api/RentalRequest/${RequestId}`)
+                    .then(d => d.json())
+                    .then(d => {
+                        d.customerName = 'Customers'
+                        d.status=4
+                        let obj = {
+                            ...d,
+                            id: RequestId
+                        }
+                        console.log('in fetch...........')
+                        console.log(obj)
+
+                        fetch(`http://localhost:5299/api/RentalRequest`, {
+                            method: 'PUT',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(obj),
+                        });
+                    })
+                setTimeout(() => {
+                    window.location.reload()
+                }, 900);
+
+            } catch (error) {
+                console.error('Error updating status:', error);
+            }
+        }
+    </script>
+</body>
+
+</html>

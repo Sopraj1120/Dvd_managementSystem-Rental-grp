@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link rel="stylesheet" href="memberstyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="..\Sourse\logo 1.png" alt="Unicorn Entertainment Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="userhome.html">Home</a></li>
+                <li><a href="rental.html">My Rentals</a></li>
+                <li><a href="account.html">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>My Account</h1>
+
+        <div class="account-info">
+            <h2>Account Information</h2>
+            <div class="form-group">
+                <label for="profile-image">
+                    <img src="Vector (2).png" alt="User Image" class="user-image" id="user-image">
+                </label>
+                <input type="file" id="profile-image" name="profile-image" accept="image/*">
+            </div>
+            <form id="account-info-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" value="" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="">
+                </div>
+                <div class="form-group">
+                    <label for="nic-no">NIC Number:</label>
+                    <input type="text" id="nic-no" name="nic-no" value="" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" value="">
+                </div>
+                <div class="form-group">
+                    <label for="mobile-no">Mobile Number:</label>
+                    <input type="text" id="mobile-no" name="mobile-no" value="">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Update Account</button>
+                </div>
+            </form>
+            <button class="logout-button" id="logout-button">Logout</button>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>About Us Contact Terms of Service Privacy Policy</p>
+                <div class="social-media">
+                    <a href="#"><img src="..\Sourse\Facebook.png" alt="Facebook" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Instagram.png" alt="Instagram" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\LinkedIn.png" alt="LinkedIn" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Pinterest.png" alt="Pinterest" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Twitter.png" alt="Twitter" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\TwitterX.png" alt="TwitterX" class="Socialmedia"></a>
+                </div>
+                <div class="copywrite">
+                    &copy; 2024 Unicorn Entertainment
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const accountForm = document.getElementById("account-info-form");
+                const logoutButton = document.getElementById("logout-button");
+                const profileImageInput = document.getElementById("profile-image");
+
+                // Retrieve the logged-in user from session storage
+                const loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser')); // Fetch the stored session object
+                const customerId = loggedInUser?.id; // Get the customer id
+
+                if (customerId) {
+                    // Fetch customer details using ID from db.json
+                    fetchCustomerDetails(customerId);
+                } else {
+                    console.error("No customer ID found in session storage.");
+                }
+
+
+                // Function to fetch customer details from db.json based on ID
+                async function fetchCustomerDetails(id) {
+                    try {
+                        const response = await fetch(`http://localhost:5299/api/Customer/GetCustomerById/${id}`);
+                        let customer = await response.json();
+                        console.log(customer)
+
+                        if (customer) {
+                            // Populate the account form fields with the customer's details
+                            document.getElementById("username").value = customer.userName || "";
+                            document.getElementById("email").value = customer.email || "";
+                            document.getElementById("nic-no").value = customer.nicNo || "";
+                            document.getElementById("address").value = customer.address || "";
+                            document.getElementById("mobile-no").value = customer.mobileNo || "";
+                            document.getElementById("user-image").src = customer.userImage || "images/default-user-image.png";
+                        } else {
+                            console.error("Customer not found.");
+                        }
+
+                        accountForm.addEventListener("submit", async (event) => {
+
+                            event.preventDefault();
+                            const email = document.getElementById("email").value;
+                            const address = document.getElementById("address").value;
+                            const mobileNo = document.getElementById("mobile-no").value;
+                            alert('cus')
+
+                            // Create form data object (only updating allowed fields)
+                            let updateDetails = {
+                                "firstName": customer.firstName,
+                                "lastName": customer.lastName,
+                                "address": address,
+                                "email": email,
+                                "password": customer.password,
+                                "confirmPassword": customer.password,
+                                "mobileNo": mobileNo,
+                                "nicNo": customer.nicNo,
+                                "userName": customer.userName
+                            }
+
+                            console.log(updateDetails)
+                            alert('cus')
+                            // Update account info
+                            try {
+                                alert("st UpdTAE")
+                                const response = await fetch(`http://localhost:5299/api/Customer/UpdateCustomer/${customerId}`, {
+                                    method: "PUT", // Use PATCH for updating specific fields
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    },
+                                    body: JSON.stringify(updateDetails),
+                                });
+
+                                if (response.ok) {
+                                    alert("Account updated successfully.");
+                                    fetchCustomerDetails(customerId); // Reload account info after update
+                                } else {
+                                    alert("Failed to update account. Please try again.");
+                                }
+                            } catch (error) {
+                                console.error("Error updating account:", error);
+                            }
+                        });
+
+                    } catch (error) {
+                        console.error("Error fetching customer details:", error);
+                    }
+                }
+
+                // Handle form submission
+
+                // Handle logout
+                logoutButton.addEventListener("click", () => {
+                    sessionStorage.removeItem('loggedInUser'); // Clear user session from session storage
+                    window.location.href = 'login.html'; // Redirect to login page
+                });
+            });
+        </script>
+
+</body>
+
+</html>

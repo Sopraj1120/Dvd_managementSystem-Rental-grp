@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="memberstyles.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="..\Sourse\logo 1.png" alt="Unicorn Entertainment Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="login.html">SignIn/SignUp</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+
+        <div class="dashboard">
+            <h1>Welcome to Unicorn Entertainment</h1>
+            <h3>Bringing Fantasy to Your Screen!</h3>
+            <div id="movies-container" class="movies-container">
+
+
+            </div>
+
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>About Us Contact Terms of Service Privacy Policy</p>
+                <div class="social-media">
+                    <a href="#"><img src="..\Sourse\Facebook.png" alt="Facebook" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Instagram.png" alt="Instagram" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\LinkedIn.png" alt="LinkedIn" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Pinterest.png" alt="Pinterest" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\Twitter.png" alt="Twitter" class="Socialmedia"></a>
+                    <a href="#"><img src="..\Sourse\TwitterX.png" alt="TwitterX" class="Socialmedia"></a>
+                </div>
+                <div class="copywrite">
+                    &copy; 2024 Unicorn Entertainment
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Function to fetch movies from the local server
+        async function fetchMovies() {
+            try {
+                const [moviesResponse, categoriesResponse] = await Promise.all([
+                    fetch('http://localhost:3000/movies'),
+                    fetch('http://localhost:3000/categories')
+                ]);
+
+                if (!moviesResponse.ok || !categoriesResponse.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const movies = await moviesResponse.json();
+                const categories = await categoriesResponse.json();
+                displayMovies(movies, categories);
+            } catch (error) {
+                console.error('Error fetching movies or categories:', error);
+            }
+        }
+
+        // Function to display movies in the DOM
+        function displayMovies(movies) {
+            const container = document.getElementById('movies-container');
+            container.innerHTML = ''; // Clear the container
+
+
+            movies.forEach(movie => {
+                const movieCard = `
+                    <div class="movie-card">
+                        <h2>${movie.title}</h2>
+                        <img src="${movie.imageUrl}" alt="${movie.title}" />
+                        <p><strong>Titel:</strong>${movie.title}</p>
+                        <p><strong>Number of Copies:</strong> ${movie.no_of_copies}</p>
+                        <p><strong>Category ID:</strong> ${movie.categoryId}</p><br>
+                        <a style="text-decoration:none" href="movie.html?movieId=${movie.id}" class="rent-btn">Rent</a>
+
+                    </div>
+                    <hr/>
+                `;
+                container.innerHTML += movieCard;
+            });
+            const rentButtons = document.querySelectorAll('.rent-btn');
+            rentButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const movieId = this.getAttribute('data-id');
+                    window.location.href = `movie.html?movieId=${movieId}`;
+                });
+            });
+        }
+
+        // Fetch and display movies when the page loads
+        fetchMovies();
+    </script>
+</body>
+
+</html>

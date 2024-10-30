@@ -1,0 +1,247 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: #18384F;
+    border-radius: 30px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 970px;
+    margin: auto;
+}
+.forgot-container{
+    background-color: #18384F;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 500px;
+    margin: auto;
+}
+.verify-container{
+    background-color: #18384F;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 440px;
+    margin: auto;
+}
+.reset-container{
+    background-color: #18384F;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 520px;
+    margin: auto;
+}
+.signup-form h2.head_reset{
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.reset_content{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: auto;
+}
+.forgot{
+    color: #FFFFFF;
+    font-size: 10px;
+    margin-left: auto;
+    margin-top: -8px;
+    
+}
+.remember{
+    display: flex;
+    margin-top: -15px;
+}
+.remember_check{
+    color: #FFFFFF;
+    font-size: 13px;
+    
+}
+.remember .remember_check{
+    margin-top: 3px;
+}
+.signin-container{
+    background-color: #18384F;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 460px;
+    margin: auto;
+    
+}
+.logo_forgot_password{
+    width: 70px;
+    height: 90px;
+    margin-left: -35px;
+    margin-top: -60px;
+    position: absolute;
+    
+}
+.logo-container_forgot{
+    justify-content: center;
+    margin-top: 50px;
+}
+.signup-form h2.head_forgot{
+    margin-top: 40px;
+    margin-right: 30px;
+    
+}
+
+.forgot_content{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.forgot_back{
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: auto;
+}
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: #18384F;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: -60px;
+    position: relative;
+    z-index: -1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+           
+}
+.verifyacc_back{
+    color: #FFFFFF;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: left;
+    margin-top: -10px;
+
+ 
+}
+
+.logo {
+    width: 70px;
+    height: 90px;
+    margin-left: -35px;
+    margin-top: -60px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.signup-form h2 {
+    color: #FFFFFF;
+    justify-content: center;
+    display: flex;
+    margin-top: -60px;
+
+    
+}
+h2{
+margin-right: -100px;
+}
+.signup-form label {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
+    
+}
+
+
+.signup-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.signup-form button {
+    background-color: #FFFFFF;
+    color: #18384F;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 150px;
+    width: 150px;
+    margin-top: 30px;
+}
+
+.signup-form button:hover {
+    background-color: #ddd;
+}
+footer .social_media_Icons
+{
+display: flex;
+
+}
+footer .social_media_Icons img {
+    width: 30px;
+    height: 30px;
+    margin-top: 1px;
+    padding: 6px;
+    margin-left: 5px;
+}
+.AboutUs
+{
+    margin-top: 20px;
+    font-size: 10px;
+   color: #FFFFFF;
+
+}
+.copywrite
+{
+    margin-top: 5px;
+    font-size: 10px;
+   color: #FFFFFF;
+}
+.login_register{
+    display: flex;
+    justify-content: center;
+}
+.register{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-left: 8px;
+}
+.acc{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.register_login{
+    display: flex;
+    justify-content: center;
+}

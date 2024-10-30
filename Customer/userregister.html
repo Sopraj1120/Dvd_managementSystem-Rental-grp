@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="../Sourse/logo 1.png" type="image/png">
+    <link rel="stylesheet" href="styles copy.css">
+</head>
+
+<body>
+    <div class="Register-container">
+        <div class="logo-container">
+            <div>
+                <div class="circle"></div>
+                <img src="../Sourse/logo 1.png" alt="Unicorn Movie Review System Logo" class="logo">
+            </div>
+        </div>
+
+        <form class="signup-form" id="signup-form">
+            <h2>Register</h2>
+
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" name="first_name" required placeholder="Enter your first name">
+
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name" name="last_name" required placeholder="Enter your last name">
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required placeholder="Enter your Address">
+
+            <label for="email">Enter Email</label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <small id="email-error" class="error-message"></small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <small id="password-error" class="error-message"></small>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+            <small id="confirm-password-error" class="error-message"></small>
+
+            <label for="mobile_no">Mobile</label>
+            <input type="text" id="mobile_no" name="mobile_no" required placeholder="Mobile Number">
+            <small id="mobile-no-error" class="error-message"></small>
+
+            <label for="nic_no">NIC NO</label>
+            <input type="text" id="nic_no" name="nic_no" required placeholder="NIC Number">
+            <small id="nic-no-error" class="error-message"></small>
+
+            <label for="user_name">User Name</label>
+            <input type="text" id="user_name" name="user_name" required placeholder="Enter User Name">
+
+            <button type="submit"><b>Register</b></button>
+        </form>
+
+        <footer>
+            <div class="AboutUs">About Us Contact Terms of Service Privacy Policy</div>
+            <div class="social_media_Icons">
+                <img src="../Sourse/Facebook.png" alt="Facebook" class="Socialmedia">
+                <img src="../Sourse/Instagram.png" alt="Instagram" class="Socialmedia">
+                <img src="../Sourse/LinkedIn.png" alt="LinkedIn" class="Socialmedia">
+                <img src="../Sourse/Pinterest.png" alt="Pinterest" class="Socialmedia">
+                <img src="../Sourse/Twitter.png" alt="Twitter" class="Socialmedia">
+                <img src="../Sourse/TwitterX.png" alt="TwitterX" class="Socialmedia">
+            </div>
+            <div class="copywrite">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+            <div class="register_login">
+                <p class="acc">Already have an account?</p>
+                <p class="register"><a href="UserLogin.html" style="color: #ffffff;">Login</a></p>
+            </div>
+        </footer>
+    </div>
+   <!-- Dialog Overlay and Box -->
+<div id="dialog-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);"></div>
+<div id="dialog-box" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background-color:blue; color:white; padding:20px; border-radius:10px;">
+    <h3>Registration Successful!</h3>
+    <button id="ok-btn" style="background-color:white; color:blue; padding:5px 10px; border:none; cursor:pointer;">OK</button>
+</div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signupForm = document.getElementById('signup-form');
+            const passwordInput = document.getElementById('password');
+            const confirmPasswordInput = document.getElementById('confirm-password');
+            const emailInput = document.getElementById('email');
+            const mobileNoInput = document.getElementById('mobile_no');
+            const firstNameInput = document.getElementById('first_name');
+            const lastNameInput = document.getElementById('last_name');
+            const addressInput = document.getElementById('address');
+            const nicNoInput = document.getElementById('nic_no');
+            const userName = document.getElementById('user_name');
+
+
+            const dialogBox = document.getElementById('dialog-box');
+            const dialogOverlay = document.getElementById('dialog-overlay');
+            const okBtn = document.getElementById('ok-btn');
+
+            signupForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                let formIsValid = true;
+
+                // Email Validation
+                const emailError = document.getElementById('email-error');
+                const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+                if (!emailPattern.test(emailInput.value)) {
+                    emailError.textContent = "Please enter a valid email address.";
+                    formIsValid = true;
+                } else {
+                    emailError.textContent = "";
+                }
+
+                // Mobile Number Validation
+                const mobileNoError = document.getElementById('mobile-no-error');
+                const mobilePattern = /^\d{10}$/;
+                if (!mobilePattern.test(mobileNoInput.value)) {
+                    mobileNoError.textContent = "Please enter a valid 10-digit mobile number.";
+                    formIsValid = false;
+                } else {
+                    mobileNoError.textContent = "";
+                }
+
+                // Ensure all validations passed before proceeding
+                if (formIsValid) {
+                    const userData = {
+                        firstName: firstNameInput.value,
+                        lastName: lastNameInput.value,
+                        address: addressInput.value,
+                        email: emailInput.value,
+                        password: passwordInput.value,
+                        confirmPassword: passwordInput.value,
+                        mobileNo: mobileNoInput.value,
+                        nicNo: nicNoInput.value,
+                        userName: userName.value,
+                        isActive:'true',
+
+                    };
+
+                    fetch("http://localhost:5299/api/Customer/CreateCustomer", {
+                        method: 'POST',
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(userData)
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Something went wrong with the request');
+                        }
+                        return response.json();
+                    })
+                    .then(result => {
+                       // Show dialog box
+                       dialogOverlay.style.display = 'block';
+                        dialogBox.style.display = 'block';
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+                }
+            });
+
+             // Handle the "OK" button click event
+             okBtn.addEventListener('click', function () {
+                dialogBox.style.display = 'none';
+                dialogOverlay.style.display = 'none';
+                window.location.href = './login.html';
+               
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+

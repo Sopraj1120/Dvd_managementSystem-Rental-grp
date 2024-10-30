@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Requests</title>
+    <link rel="icon" href="../Sourse/logo 1.png" type="image/png">
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Sourse/logo 1.png" alt="Unicorn Entertainment Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="User.html">Users</a></li>
+                <li><a href="notification.html">Notifications (<span id="rental-count">0</span>)</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="report.html">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Rental Requests</h2>
+        <table id="rental-requests">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Movie Image</th>
+                    <th>Movie Title</th>
+                    <th>Available Copies</th>
+                    <th>Status</th>
+                    <th>Rent Date</th>
+                    <th>Return Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rental requests will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>About Us Contact Terms of Service Privacy Policy</p>
+            <div class="social-media">
+                <a href="#"><img src="../Sourse/Facebook.png" alt="Facebook" class="Socialmedia"></a>
+                <a href="#"><img src="../Sourse/Instagram.png" alt="Instagram" class="Socialmedia"></a>
+                <a href="#"><img src="../Sourse/LinkedIn.png" alt="LinkedIn" class="Socialmedia"></a>
+                <a href="#"><img src="../Sourse/Pinterest.png" alt="Pinterest" class="Socialmedia"></a>
+                <a href="#"><img src="../Sourse/Twitter.png" alt="Twitter" class="Socialmedia"></a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tableBody = document.querySelector('#rental-requests tbody');
+            const rentalCountElement = document.getElementById('rental-count');
+
+            async function fetchRentalRequests() {
+                try {
+                    const response = await fetch('http://localhost:5299/api/RentalRequest');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    const rentalRequests = await response.json();
+                    console.log('Fetched rental requests:', rentalRequests);
+                    return rentalRequests;
+                } catch (error) {
+                    console.error('Error fetching rental requests:', error);
+                    return [];
+                }
+            }
+
+            async function updateRequestStatus(RequestId, updatedData) {
+                try {
+                    console.log(RequestId)
+                    console.log(updatedData)
+                    await fetch(`http://localhost:5299/api/RentalRequest/${RequestId}`)
+                        .then(d => d.json())
+                        .then(d => {
+                            d.status = updatedData.status;
+                            d.rentDate = updatedData.rentDate
+                            d.returnDate = updatedData.returnDate
+                            d.customerName = 'Customers'
+                            let obj = {
+                                ...d,
+                                id: RequestId
+                            }
+
+                            fetch('http://localhost:5299/api/Movie')
+                                .then(d => d.json())
+                                .then(d => {
+                                    MovieDetails.push(...d)
+                                    let QuantValidate = MovieDetails.find(x => x.id == d.movieId)
+                                    let CopFinal = availableCopies + 1
+
+                                    let QObj = {
+                                        title: QuantValidate.title,
+                                        description: QuantValidate.description,
+                                        copies: CopFinal,
+                                        categoryId: QuantValidate.categoryId,
+                                        categoryName: QuantValidate.categoryName,
+                                        image: QuantValidate.image
+                                    }
+                                    console.log(QObj)
+                                    console.log('QObj')
+                                    fetch(`http://localhost:5299/api/Movie?id=${QuantValidate.id}`, {
+                                        method: 'PUT',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                        },
+                                        body: JSON.stringify(QObj),
+                                    });
+                                })
+
+
+
+
+
+                            console.log('in fetch...........')
+                            console.log(obj)
+
+                            fetch(`http://localhost:5299/api/RentalRequest`, {
+                                method: 'PUT',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(obj),
+                            });
+
+                        })
+                    setTimeout(() => {
+                        window.location.reload()
+                    }, 900);
+
+                    displayRentalRequests();
+                } catch (error) {
+                    console.error('Error updating status:', error);
+                }
+            }
+
+            async function displayRentalRequests() {
+                const rentalRequests = await fetchRentalRequests();
+
+                // Sort rental requests: pending first, then approved, then rejected/returned
+                rentalRequests.sort((a, b) => {
+                    if (a.status === 'Approved' || a.status === 'Rejected' || a.status === 'Returned') return 1;
+                    return -1;  // Pending requests go first
+                });
+
+                let pendingCount = 0;
+                tableBody.innerHTML = rentalRequests.map(request => {
+                    const isApproved = request.status === 1;
+                    const isRejected = request.status === 4;
+                    const isReturned = request.status === 2;
+                    const FinalReturn = request.status === 3;
+
+                    if (!isApproved && !isRejected) pendingCount++;
+
+                    return `
+                        <tr>
+                            <td>${request.customerName || 'N/A'}</td>
+                            <td><img src="${request.movieImage}" alt="${request.movieTitle}" width="80"></td>
+                            <td>${request.movieTitle}</td>
+                            <td>${request.availableCopies || '0'}</td>
+                            <td>${request.status}</td>
+                            <td>${request.rentDate ? new Date(request.rentDate).toLocaleDateString() : '-'}</td>
+                            <td>${request.returnDate ? new Date(request.returnDate).toLocaleDateString() : '-'}</td>
+                            <td>${generateActionButtons(request, isApproved, isRejected, isReturned)}</td>
+                        </tr>
+                    `;
+                }).join('');
+
+                rentalCountElement.textContent = pendingCount;
+            }
+
+            function generateActionButtons(request, isApproved, isRejected, isReturned , FinalReturn) {
+                if (isReturned) {
+                    return `<p>Movie Returned</p>`;
+                } else if (isApproved) {
+                    return `<button class="return-btn" onclick="returnMovie('${request.id}')">Return</button>`;
+                } else if (!isRejected) {
+                    return `
+                        <button class="accept-btn" onclick="acceptRequest('${request.id}')">Approve</button>
+                        <button class="reject-btn" onclick="rejectRequest('${request.id}')">Reject</button>
+                    `;
+                } else if (!FinalReturn) {
+                     return `<p>Rejected</p>`
+                }{
+                    return `<p>Rejected: ${request.rejectionReason}</p>`;
+                }
+            }
+
+            window.acceptRequest = async function (requestId) {
+                const rentDate = new Date();
+                const returnDate = new Date();
+                returnDate.setDate(rentDate.getDate() + 7);
+                const status = 1
+                await updateRequestStatus(requestId, { rentDate, returnDate, status });
+            };
+
+            window.rejectRequest = async function (requestId) {
+                const reason = prompt('Enter rejection reason:');
+                const rentDate = new Date();
+                const returnDate = 'Rejected';
+                const status = 4
+                if (reason) {
+                    const status = 4
+                    await updateRequestStatus(requestId, { rentDate, returnDate, status, rejectionReason: reason });
+                }
+
+            };
+
+            window.returnMovie = async function (requestId) {
+                const status = 2
+                const rentDate = new Date();
+                const returnDate = 'Return';
+                await updateRequestStatus(requestId, { rentDate, returnDate, status });
+            };
+
+            displayRentalRequests();
+        });
+    </script>
+
+</body>
+
+</html>

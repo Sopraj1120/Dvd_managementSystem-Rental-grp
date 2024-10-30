@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Page</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="..\Sourse\logo 1.png" alt="Unicorn Entertainment Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin.html" aria-label="Dashboard">Dashboard</a></li>
+                <li><a href="category.html" aria-label="Category">Category</a></li>
+                <li><a href="User.html" aria-label="Users">Users</a></li>
+                <li><a href="notification.html" aria-label="Notifications">Notifications</a></li>
+                <li><a href="rentals.html" aria-label="Rentals">Rentals</a></li>
+                <li><a href="report.html" aria-label="Reports">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+        <h1>Reports</h1>
+        <div id="report-selection">
+            <label for="report-type">Select Report Type:</label>
+            <select id="report-type">
+                <option value="Select">Select Report</option>
+                <option value="inventory">Inventory Report</option>
+                <option value="rental">Rental Report</option>
+                <option value="customer">Customer Report</option>
+            </select>
+        </div>
+
+        <!-- Filter and Search Options for Inventory Report -->
+        <div id="inventory-filters" style="display:none;">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <!-- Dynamically load categories here -->
+            </select>
+            <label for="search-movie">Search Movie:</label>
+            <input type="text" id="search-movie" placeholder="Enter movie title...">
+        </div>
+
+        <div id="report-content">
+            <!-- Report tables will be displayed here -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>About Us Contact Terms of Service Privacy Policy</p>
+            <div class="social-media">
+                <a href="#"><img src="..\Sourse\Facebook.png" alt="Facebook" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Instagram.png" alt="Instagram" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\LinkedIn.png" alt="LinkedIn" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Pinterest.png" alt="Pinterest" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Twitter.png" alt="Twitter" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\TwitterX.png" alt="TwitterX" class="Socialmedia"></a>
+            </div>
+            <div class="copywrite">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reportTypeSelect = document.getElementById('report-type');
+            const reportContent = document.getElementById('report-content');
+            const categoryFilter = document.getElementById('category-filter');
+            const searchMovie = document.getElementById('search-movie');
+            const inventoryFilters = document.getElementById('inventory-filters');
+
+            let inventoryData = [];
+            let rentalRequests = [];
+            let categoriesData = [];
+            let loadingMessage = document.createElement('p');
+
+            // Show loading message
+            function showLoading() {
+                loadingMessage.textContent = 'Loading, please wait...';
+                reportContent.appendChild(loadingMessage);
+            }
+
+            // Hide loading message
+            function hideLoading() {
+                loadingMessage.textContent = '';
+            }
+
+            // Fetch categories data
+            async function fetchCategoriesData() {
+                try {
+                    const response = await fetch('http://localhost:5299/api/Category');
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    categoriesData = await response.json();
+                    populateCategoryDropdown();
+                } catch (error) {
+                    console.error('Error fetching categories data:', error);
+                }
+            }
+
+            // Populate the category dropdown
+            function populateCategoryDropdown() {
+                categoriesData.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category.id;
+                    option.textContent = category.name;
+                    categoryFilter.appendChild(option);
+                });
+            }
+
+            // Fetch inventory data
+            async function fetchInventoryData() {
+                showLoading();
+                try {
+                    const response = await fetch('http://localhost:5299/api/Movie');
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    inventoryData = await response.json();
+                    displayInventoryReport();
+                } catch (error) {
+                    console.error('Error fetching inventory data:', error);
+                    reportContent.innerHTML = `<p>Error fetching inventory data. Please try again later.</p>`;
+                } finally {
+                    hideLoading();
+                }
+            }
+
+            // Display the inventory report
+            function displayInventoryReport() {
+                const filteredInventory = filterInventory(inventoryData);
+                let tableHTML = `
+                    <h2>Inventory Report</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Movie Image</th>
+                                <th>Movie Title</th>
+                                <th>Genre</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+                filteredInventory.forEach(item => {
+                    const category = categoriesData.find(cat => cat.id === item.categoryId); // Find category name
+                    tableHTML += `
+                        <tr>
+                            <td><img src="${item.image}" alt="${item.title}" style="width: 50px; height: 75px;"></td>
+                            <td>${item.title}</td>
+                            <td>${category ? category.name : 'Unknown'}</td>
+                            <td>${item.copies}</td>
+                        </tr>
+                    `;
+                });
+                tableHTML += '</tbody></table>';
+                reportContent.innerHTML = tableHTML;
+            }
+
+            // Filter inventory data
+            function filterInventory(inventory) {
+                const selectedCategory = categoryFilter.value;
+                const searchText = searchMovie.value.toLowerCase();
+
+                return inventory.filter(item => {
+                    const categoryMatch = selectedCategory === 'all' || item.categoryId === selectedCategory;
+                    const searchMatch = item.title.toLowerCase().includes(searchText);
+                    return categoryMatch && searchMatch;
+                });
+            }
+
+            // Show the appropriate report based on selected type
+            function showReport(reportType) {
+                reportContent.innerHTML = ''; // Clear existing content
+
+                if (reportType === 'inventory') {
+                    inventoryFilters.style.display = 'block'; // Show filters for inventory report
+                    fetchInventoryData(); // Fetch inventory data
+                } else {
+                    inventoryFilters.style.display = 'none';
+                    if (reportType === 'rental') {
+                        fetchRentalRequests(); // Fetch rental requests data
+                    } else if (reportType === 'customer') {
+                        if (rentalRequests.length === 0) {
+                            fetchRentalRequests().then(() => {
+                                displayCustomerReport();
+                            });
+                        } else {
+                            displayCustomerReport();
+                        }
+                    }
+                }
+            }
+
+            // Fetch rental requests data
+            async function fetchRentalRequests() {
+                showLoading();
+                try {
+                    const response = await fetch('http://localhost:5299/api/RentalRequest');
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    rentalRequests = await response.json();
+                    displayRentalReport();
+                } catch (error) {
+                    console.error('Error fetching rental requests:', error);
+                    reportContent.innerHTML = `<p>Error fetching rental requests. Please try again later.</p>`;
+                } finally {
+                    hideLoading();
+                }
+            }
+
+            // Display rental report
+            function displayRentalReport() {
+                let tableHTML = `
+                    <h2>Rental Report</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Movie Image</th>
+                                <th>Movie Title</th>
+                                <th>Renter</th>
+                                <th>Rent Date</th>
+                                <th>Return Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+                rentalRequests.forEach(request => {
+                    tableHTML += `
+                        <tr>
+                            <td><img src="${request.movieImage}" alt="${request.movieTitle}" style="width: 50px; height: 75px;"></td>
+                            <td>${request.movieTitle}</td>
+                            <td>${request.member}</td>
+                            <td>${request.rentDate}</td>
+                            <td>${request.returnDate}</td>
+                            <td>${request.status}</td>
+                        </tr>
+                    `;
+                });
+                tableHTML += '</tbody></table>';
+                reportContent.innerHTML = tableHTML;
+            }
+
+            // Display customer report
+            function displayCustomerReport() {
+                let tableHTML = `
+                    <h2>Customer Report</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Member Name</th>
+                                <th>Rented Movies</th>
+                                <th>Renting Dates</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+                rentalRequests.forEach(request => {
+                    tableHTML += `
+                        <tr>
+                            <td>${request.customerId}</td>
+                            <td>${request.movieTitle}</td>
+                            <td>${request.rentDate}</td>
+                            <td>${request.status}</td>
+                        </tr>
+                    `;
+                });
+                tableHTML += '</tbody></table>';
+                reportContent.innerHTML = tableHTML;
+            }
+
+            // Event listeners
+            reportTypeSelect.addEventListener('change', (event) => {
+                const reportType = event.target.value;
+                showReport(reportType);
+            });
+
+            categoryFilter.addEventListener('change', displayInventoryReport);
+            searchMovie.addEventListener('input', displayInventoryReport);
+
+            // Fetch categories on page load
+            fetchCategoriesData();
+        });
+    </script>
+</body>
+
+</html>

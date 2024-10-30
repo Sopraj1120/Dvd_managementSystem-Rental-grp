@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="signin-container">
+        <div class="logo-container">
+            <div>
+                <div class="circle"></div>
+                <img src="..\Sourse\logo 1.png" alt="Unicorn Movie Review System Logo" class="logo">
+            </div>
+        </div>
+
+        <form class="signup-form" id="signin-form">
+            <h2>Login</h2>
+            <label for="owner-id">>Enter Admin Id</label>
+            <input type="text" id="owner-id" name="owner-id" required placeholder="Enter Email ID">
+            <small id="owner-id-error" class="error-message"></small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <small id="password-error" class="error-message"></small>
+            <p class="forgot"><a href="forgotpassword.html" style="color: #ffffff;">Forgot Password?</a></p>
+
+            <div class="remember">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me" class="remember_check">Remember Me</label>
+            </div>
+
+            <button type="submit"><b>Log In</b></button>
+        </form>
+
+        <footer>
+            <div class="AboutUs">About Us Contact Terms of Service Privacy Policy</div>
+            <div class="social_media_Icons">
+                <a href="#"><img src="..\Sourse\Facebook.png" alt="Facebook" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Instagram.png" alt="Instagram" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\LinkedIn.png" alt="LinkedIn" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Pinterest.png" alt="Pinterest" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\Twitter.png" alt="Twitter" class="Socialmedia"></a>
+                <a href="#"><img src="..\Sourse\TwitterX.png" alt="TwitterX" class="Socialmedia"></a>
+            </div>
+            <div class="copywrite">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        async function hashPassword(password) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(password);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return hashHex;
+        }
+        let AdminDetails=[];
+
+            fetch('http://localhost:5299/api/Admin/GetCustomer')
+            .then(d=>d.json())
+            .then(d=>{
+                AdminDetails.push(...d)
+            })
+        
+        console.log(AdminDetails)
+
+
+        document.getElementById('signin-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById('owner-id').value;
+            const password = document.getElementById('password').value;
+            let RegDetails=AdminDetails.find(e=>e.email==email)
+
+            if (!RegDetails) {
+                document.getElementById('owner-id-error').textContent = 'No account found. Please register first.';
+                return;
+            }
+
+            const hashedPassword = await hashPassword(password);
+
+            if (email === RegDetails.email && hashedPassword === RegDetails.password) {
+                alert("Login successful!");
+                // Redirect to the admin dashboard or the next page
+                window.location.href = 'admin.html'; 
+            } else {
+                document.getElementById('password-error').textContent = 'Invalid email or password. Please try again.';
+            }
+        });
+    </script>
+</body>
+
+</html>

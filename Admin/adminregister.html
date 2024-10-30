@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="..\Sourse\logo 1.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="adminsignup-container">
+        <div class="logo-container">
+            <div>
+                <div class="circle"></div>
+                <img src="..\Sourse\logo 1.png" alt="Unicorn Movie Review System Logo" class="logo">
+            </div>
+        </div>
+
+        <form class="signup-form" id="signup-form">
+            <h2>Sign Up</h2>
+            <label for="owner-id">Enter Email</label>
+            <input type="email" id="owner-id" name="owner-id" required placeholder="example@domain.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <small id="email-error" class="error-message"></small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <small id="password-error" class="error-message"></small>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required
+                placeholder="Confirm your password">
+            <small id="confirm-password-error" class="error-message"></small>
+
+            <button type="submit"><b>Register</b></button>
+        </form>
+
+        <footer>
+            <div class="AboutUs">About Us Contact Terms of Service Privacy Policy</div>
+            <div class="social_media_Icons">
+                <img src="..\Sourse\Facebook.png" alt="Facebook" class="Socialmedia">
+                <img src="..\Sourse\Instagram.png" alt="Instagram" class="Socialmedia">
+                <img src="..\Sourse\LinkedIn.png" alt="LinkedIn" class="Socialmedia">
+                <img src="..\Sourse\Pinterest.png" alt="Pinterest" class="Socialmedia">
+                <img src="..\Sourse\Twitter.png" alt="Twitter" class="Socialmedia">
+                <img src="..\Sourse\TwitterX.png" alt="TwitterX" class="Socialmedia">
+            </div>
+            <div class="copywrite">
+                &copy; 2024 Unicorn Entertainment
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // function generateAdminID() {
+        //     return 'ADM-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+        //  }
+
+        async function hashPassword(password) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(password);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            return hashHex;
+        }
+
+        document.getElementById('signup-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+
+            var email = document.getElementById('owner-id').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirm-password').value;
+
+            var valid = true;
+
+            var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+                valid = false;
+            }
+
+            if (password !== confirmPassword) {
+                document.getElementById('confirm-password-error').textContent = 'Passwords do not match.';
+                valid = false;
+            }
+
+            if (valid) {
+                var hashedPassword = await hashPassword(password);
+
+                // Save the email and admin ID to localStorage temporarily for login validation
+                localStorage.setItem('adminEmail', email);
+
+                // Data to be sent to the server
+                var data = { confirmPassword: hashedPassword, email: email, password: hashedPassword };
+
+                // Fetch API to send data to db.json
+                fetch("http://localhost:5299/api/Admin/create", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = 'login.html'; // Redirect after successful registration
+                        } else {
+                            alert("Registration failed.");
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert("An error occurred. Please try again.");
+                    });
+            }
+        });
+
+    </script>
+</body>
+
+</html>

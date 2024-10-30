@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1TxuSyCJlw9U94Mo9SO/870wdCMGOeGCwkzn7fwvtHo=",
+  "Source": "dvdrental",
+  "BasePath": "_content/dvdrental",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
