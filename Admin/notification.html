@@ -85,6 +85,7 @@
                 try {
                     console.log(RequestId)
                     console.log(updatedData)
+
                     await fetch(`http://localhost:5299/api/RentalRequest/${RequestId}`)
                         .then(d => d.json())
                         .then(d => {
@@ -96,39 +97,37 @@
                                 ...d,
                                 id: RequestId
                             }
+                            const MovieDetails = []
 
-                            fetch('http://localhost:5299/api/Movie')
-                                .then(d => d.json())
-                                .then(d => {
-                                    MovieDetails.push(...d)
-                                    let QuantValidate = MovieDetails.find(x => x.id == d.movieId)
-                                    let CopFinal = availableCopies + 1
-
-                                    let QObj = {
-                                        title: QuantValidate.title,
-                                        description: QuantValidate.description,
-                                        copies: CopFinal,
-                                        categoryId: QuantValidate.categoryId,
-                                        categoryName: QuantValidate.categoryName,
-                                        image: QuantValidate.image
-                                    }
-                                    console.log(QObj)
-                                    console.log('QObj')
-                                    fetch(`http://localhost:5299/api/Movie?id=${QuantValidate.id}`, {
-                                        method: 'PUT',
-                                        headers: {
-                                            'Content-Type': 'application/json',
-                                        },
-                                        body: JSON.stringify(QObj),
-                                    });
-                                })
-
-
-
-
-
-                            console.log('in fetch...........')
-                            console.log(obj)
+                            if (updatedData.status == 4 || updatedData.status == 2) {
+                                fetch('http://localhost:5299/api/Movie')
+                                    .then(d => d.json())
+                                    .then(d => {
+                                        MovieDetails.push(...d)
+                                        console.log('Movie Details');
+                                        console.log(MovieDetails)
+                                        let QuantValidate = MovieDetails.find(x => x.id == obj.movieId)
+                                        let CopFinal = parseInt(QuantValidate.copies, 10) + 1
+                                        console.log(CopFinal)
+                                        let QObj = {
+                                            title: QuantValidate.title,
+                                            description: QuantValidate.description,
+                                            copies: CopFinal,
+                                            categoryId: QuantValidate.categoryId,
+                                            categoryName: QuantValidate.categoryName,
+                                            image: QuantValidate.image
+                                        }
+                                        console.log(QObj)
+                                        console.log('QObj')
+                                        fetch(`http://localhost:5299/api/Movie?id=${QuantValidate.id}`, {
+                                            method: 'PUT',
+                                            headers: {
+                                                'Content-Type': 'application/json',
+                                            },
+                                            body: JSON.stringify(QObj),
+                                        });
+                                    })
+                            }
 
                             fetch(`http://localhost:5299/api/RentalRequest`, {
                                 method: 'PUT',
@@ -182,7 +181,7 @@
                 rentalCountElement.textContent = pendingCount;
             }
 
-            function generateActionButtons(request, isApproved, isRejected, isReturned , FinalReturn) {
+            function generateActionButtons(request, isApproved, isRejected, isReturned, FinalReturn) {
                 if (isReturned) {
                     return `<p>Movie Returned</p>`;
                 } else if (isApproved) {
@@ -193,8 +192,8 @@
                         <button class="reject-btn" onclick="rejectRequest('${request.id}')">Reject</button>
                     `;
                 } else if (!FinalReturn) {
-                     return `<p>Rejected</p>`
-                }{
+                    return `<p>Rejected</p>`
+                } {
                     return `<p>Rejected: ${request.rejectionReason}</p>`;
                 }
             }
@@ -208,14 +207,10 @@
             };
 
             window.rejectRequest = async function (requestId) {
-                const reason = prompt('Enter rejection reason:');
                 const rentDate = new Date();
                 const returnDate = 'Rejected';
                 const status = 4
-                if (reason) {
-                    const status = 4
-                    await updateRequestStatus(requestId, { rentDate, returnDate, status, rejectionReason: reason });
-                }
+                await updateRequestStatus(requestId, { rentDate, returnDate, status });
 
             };
 

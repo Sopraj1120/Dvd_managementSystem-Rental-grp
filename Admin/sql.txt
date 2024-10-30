@@ -1,0 +1,8 @@
+INSERT INTO Categories (Id, CategoryId, Name)
+VALUES 
+    (NEWID(), 1, 'Action'),
+    (NEWID(), 2, 'Comedy'),
+    (NEWID(), 3, 'Series'),
+    (NEWID(), 4, 'Horror'),
+    (NEWID(), 5, 'Kids'),
+    (NEWID(), 6, 'Sci-Fi');

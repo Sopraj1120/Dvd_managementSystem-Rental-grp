@@ -427,7 +427,7 @@
                     deleteButton.addEventListener("click", async function () {
                         const movieId = this.dataset.movieId;
                         try {
-                            const response = await fetch(`http://localhost:3000/movies/${movieId}`, { method: "DELETE" });
+                            const response = await fetch(`http://localhost:5299/api/Movie/${movieId}`, { method: "DELETE" });
                             if (response.ok) {
                                 const categoryId = this.closest('tr').dataset.categoryId;
                                 updateMovieCount(categoryId);
